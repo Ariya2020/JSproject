@@ -1,0 +1,60 @@
+@font-face {
+    font-family: 'vazir';
+    src: url('../fonts/vazir.eot') format('eot'),
+        url('../fonts/vazir.ttf') format('truetype'),
+        url('../fonts/vazir.woff') format('woff'),
+        url('../fonts/vazir.woff2') format('woff2');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+}
+
+body {
+    font-family: 'vazir';
+    direction: rtl;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(90deg, #c50707, #faa000);
+}
+
+.search {
+    height: 50px;
+    position: relative;
+}
+
+.search .input {
+    font-family: 'vazir';
+    font-size: 18px;
+    padding: 5px 10px;
+    box-sizing: border-box;
+    height: 50px;
+    width: 20px;
+    border: none;
+    transition: width .8s ease;
+}
+
+.search.active .input {
+    width: 300px;
+    transform: translateX(290px);
+}
+
+.search .btn {
+    padding: 15px;
+    border: none;
+    background: #fff;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    border-radius: 100px solid;
+    transition: transform .8s ease;
+    font-size: 20px;
+}

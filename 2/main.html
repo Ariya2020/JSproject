@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <section>
+        <video id="slider" loop autoplay muted>
+            <source src="video/Paris.mp4" type="video/mp4">
+        </video>
+        <ul class="navigation">
+            <li onclick="videoUrl('Paris.mp4')" > <img src="images/Screenshot 2023-03-30 140944.png" alt=""></li>
+            <li onclick="videoUrl('Tokyo.mp4')"> <img src="images/Tokyo.png" alt=""></li>
+            <li onclick="videoUrl('NewYork.mp4') "> <img src="images/NewYork.png" alt=""></li>
+            <li onclick=" videoUrl('London.mp4') "><img src="images/London.png" alt=""></li>
+        </ul>
+    </section>
+    <script >
+        function videoUrl(link){
+          document.getElementById( "slider").src ="Video/" + link;
+        }
+    </script>
+</body>
+
+</html>
